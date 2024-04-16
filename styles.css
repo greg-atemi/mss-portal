@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Inter, sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+body{
+    background-size: cover; /* Adjust background size as needed */
+    background-position: center; /* Center the background image */
+    background-image: url("assets/background.png");
+}
+
+.parentDiv{
+    height: 100%;
+}
+
+.parent{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 80px;
+}
+
+.apps{
+    background-color: #FFFFFF;
+    opacity: 95%;
+    padding-top: 12px;
+    padding-left: 64px;
+    padding-right: 64px;
+    padding-bottom: 24px;
+    border-radius: 0 40px 40px 0;
+}
+
+.apps .content{
+    margin-bottom: 12px;
+}
+
+.apps img{
+    height: 64px;
+    width: 64px;
+}
+
+.form{
+    opacity: 95%;
+    width: 31.25%;
+    background-color: #FFFFFF;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-left: 36px;
+    padding-right: 36px;
+    border-radius: 32px;
+}
+
+.form .top-div{
+    display: flex;
+    margin-bottom: 24px;
+}
+
+.form .top-div img{
+    width: 220px;
+    height: 56px;
+}
+
+.form .top-div .line{
+    background-color: #444444;
+    height: 64px;
+    width: 1px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.form .top-div .content{
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    color: #F89C2E;
+}
+
+.form .inputfields{
+    display: flex;
+    flex-direction: column;
+}
+
+.form .inputfields input{
+    display: block;
+    margin-bottom: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 16px;
+    padding-bottom: 8px;
+    font-size: 16px;
+    border-style: hidden;
+    border-bottom: 1px solid #444444;
+}
+
+.form .peripherals{
+    display: flex;
+    font-size: 16px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.form .peripherals .east a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #ff0000;
+}
+
+.form .peripherals .west{
+    margin-bottom: 24px;
+}
+
+.form .peripherals .west label{
+    text-decoration: none;
+    margin-right: 12px;
+}
+
+.form .buttonParent{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+
+.form .buttonParent input{
+    background-color: #F89C2E;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-right: 80px;
+    padding-left: 80px;
+    color: #FFFFFF;
+    border-radius: 16px;
+    border: 0;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.form .footer{
+    color: #F89C2E;
+    font-size: 16px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.form .footer a{
+    text-decoration: none;
+    margin-left: 4px;
+    font-weight: 700;
+    color: #F89C2E;
+}
+
+.copyright{
+    background-color: #FFFFFF;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 24px;
+    padding-right: 24px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.copyright .west{
+    display: flex;
+}
+
+.copyright .west div{
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+}
+
+.copyright .west div img{
+    margin-right: 12px;
+}
