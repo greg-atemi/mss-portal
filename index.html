@@ -4,15 +4,16 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="styles.css">
+        <script type="text/javascript" src="index.js"></script> 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     </head>
-    <body>
+    <body id="body">
         <div class="parentDiv">
-            <div class="parent">
-                <div class="apps">
+            <div class="parent" id="parent">
+                <div class="apps" id="apps">
                     <div class="content"> Download our Mobile App! </div>
                     <div class="grid"> 
                         <img src="assets/playstore.svg">
@@ -21,7 +22,7 @@
                     </div>
                 </div>
     
-                <div class="form">
+                <div class="login" id="login">
                     <div class="top-div">
                         <img src="assets/systechlogo.svg">
                         <div class="line"></div>
@@ -44,8 +45,29 @@
                         <div class="buttonParent">
                             <input class="submit" type="submit" value="LOG IN">
                         </div>
-                        <div class="footer">
-                            Dont have an account? <a href="">REGISTER</a>
+                        <div class="footer" onclick="registration()">
+                            Don't have an account? <a>REGISTER</a>
+                        </div>
+                    </form>
+                </div>
+                <div class="register" id="register">
+                    <div class="top-div">
+                        <div class="content"> User Self-Registration </div>
+                    </div>
+                    <form>
+                        <div class="inputfields">
+                            <select class="input" type="text" placeholder="User Type">
+                                <option>User Type</option>
+                                <option>Option1</option>
+                                <option>Option2</option>
+                            </select>
+                            <input class="input" type="text" placeholder="Email/Phone Number">
+                        </div>
+                        <div class="buttonParent">
+                            <input class="submit" type="submit" value="REGISTER">
+                        </div>
+                        <div class="footer" onclick="login()">
+                            Do you have an account <a>LOGIN</a>
                         </div>
                     </form>
                 </div>
