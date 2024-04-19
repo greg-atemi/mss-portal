@@ -54,7 +54,7 @@ body{
     width: 64px;
 }
 
-.form{
+.login{
     opacity: 95%;
     width: 31.25%;
     background-color: #FFFFFF;
@@ -66,17 +66,37 @@ body{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
 }
 
-.form .top-div{
+.register{
+    display: none;
+    opacity: 95%;
+    width: 31.25%;
+    background-color: #FFFFFF;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-left: 36px;
+    padding-right: 36px;
+    border-radius: 32px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+
+.login .top-div{
     display: flex;
     margin-bottom: 24px;
 }
 
-.form .top-div img{
+.register .top-div{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+
+.login .top-div img{
     width: 220px;
     height: 56px;
 }
 
-.form .top-div .line{
+.login .top-div .line{
     background-color: #444444;
     height: 64px;
     width: 1px;
@@ -84,19 +104,30 @@ body{
     margin-right: 20px;
 }
 
-.form .top-div .content{
+.login .top-div .content{
     font-size: 24px;
     font-weight: 700;
     text-align: center;
     color: #F89C2E;
 }
 
-.form .inputfields{
+.register .top-div .content{
+    font-size: 24px;
+    font-weight: 700;
+    color: #094C85;
+}
+
+.login .inputfields{
     display: flex;
     flex-direction: column;
 }
 
-.form .inputfields input{
+.register .inputfields{
+    display: flex;
+    flex-direction: column;
+}
+
+.login .inputfields input{
     display: block;
     margin-bottom: 16px;
     padding-left: 16px;
@@ -108,35 +139,53 @@ body{
     border-bottom: 1px solid #444444;
 }
 
-.form .peripherals{
+.register .inputfields input,select{
+    display: block;
+    margin-bottom: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 16px;
+    padding-bottom: 8px;
+    font-size: 16px;
+    border-style: hidden;
+    border-bottom: 1px solid #444444;
+}
+
+.login .peripherals{
     display: flex;
     font-size: 16px;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.form .peripherals .east a{
+.login .peripherals .east a{
     text-decoration: none;
     font-size: 16px;
     color: #ff0000;
 }
 
-.form .peripherals .west{
+.login .peripherals .west{
     margin-bottom: 24px;
 }
 
-.form .peripherals .west label{
+.login .peripherals .west label{
     text-decoration: none;
     margin-right: 12px;
 }
 
-.form .buttonParent{
+.login .buttonParent{
     display: flex;
     justify-content: center;
     margin-bottom: 24px;
 }
 
-.form .buttonParent input{
+.register .buttonParent{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+
+.login .buttonParent input{
     background-color: #F89C2E;
     padding-bottom: 10px;
     padding-top: 10px;
@@ -149,18 +198,45 @@ body{
     font-size: 24px;
 }
 
-.form .footer{
+.register .buttonParent input{
+    background-color: #094C85;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-right: 80px;
+    padding-left: 80px;
+    color: #FFFFFF;
+    border-radius: 16px;
+    border: 0;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.login .footer{
     color: #F89C2E;
     font-size: 16px;
     display: flex;
     justify-content: flex-end;
 }
 
-.form .footer a{
+.login .footer a{
     text-decoration: none;
     margin-left: 4px;
     font-weight: 700;
     color: #F89C2E;
+}
+
+.register .footer{
+    color: #094C85;
+    font-size: 16px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.register .footer a{
+    text-decoration: none;
+    margin-left: 4px;
+    font-weight: 700;
+    color: #094C85;
 }
 
 .copyright{
